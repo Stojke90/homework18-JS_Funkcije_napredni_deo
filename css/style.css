@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+	box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background-bit-bytes-2004161-768x512.jpg);
+    background-attachment: fixed;
+}
+
+header, main, footer {
+	width: 100%;
+}
+
+header, footer {
+	background-color: #000000a3;
+
+}
+
+header p {
+	text-align: center;
+    font-size: 45px;
+    padding: 20px 10px 20px 10px;
+    position: relative;
+    animation: navanimae 16s none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes navanimae {
+  0%   {color: #fdfdfd;}
+  25%  {color: #ce0000;}
+  50%  {color: #c552c2bd;}
+  100% {color: #ff9715;}
+}
+
+header p, footer p {
+    color: #fdfdfd;
+}
+
+main {
+    padding: 30px 10px;
+  
+}
+
+main section {
+	max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 10px;
+    background-color: #2c2d3ed6;
+    box-shadow: inset 0px 0px 12px 7px #f7d7d7c7, 8px 8px #dcc0c04f;
+    border-radius: 20px;
+}
+
+
+
+main section p {
+	font-size: 18px;
+    color: #6a9ea7;
+    font-style: italic;
+    padding-bottom: 20px;
+    max-width: 900px;
+    width: 100%;
+    text-indent: -72px;
+    margin-left: auto;
+}
+
+span {
+	color: #8b0000;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+footer {
+	line-height: 2;
+	padding: 20px 10px;
+}
+
+footer p, footer h5 {
+	text-align: center;
+	font-size: 18px;
+}
+
+
+/* responsive */
+
+@media  all and (max-width: 1040px) {
+    .task {
+    position: relative;
+    left: 73px;
+    bottom: 25px;
+    }
+
+    main section p {
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
+@media  all and (max-width: 700px) {
+    header > p {
+        font-size: 30px;
+    }
+}
